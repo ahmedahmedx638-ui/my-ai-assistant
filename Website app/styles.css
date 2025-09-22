@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  color: #fff;
+  position: relative;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ---------- Backgrounds ---------- */
+
+/* Video background (Home page only) */
+body.home #bgVideo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* JPEG background (About page) */
+body.about {
+  background: url("about-bg.jpg") no-repeat center center/cover;
+}
+
+/* JPEG background (Download page) */
+body.download {
+  background: url("download-bg.jpg") no-repeat center center/cover;
+}
+
+/* ---------- Header ---------- */
+header {
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 15px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.site-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #00f2fe;
+}
+
+/* ---------- Hero Section ---------- */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero h2, 
+.hero p {
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.btn {
+  padding: 12px 24px;
+  background: #00f2fe;
+  color: #222;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #4facfe;
+}
+
+/* ---------- Content Pages ---------- */
+.content {
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
+/* ---------- Footer ---------- */
+footer {
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  position: relative;
+  z-index: 1;
+}
